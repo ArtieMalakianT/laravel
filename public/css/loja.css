@@ -1,0 +1,403 @@
+body
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Scrool Bar Width */
+::-webkit-scrollbar
+{
+    width:5px;
+}
+
+/* Scrool Bar Handle */
+::-webkit-scrollbar-thumb
+{
+    background:#eb3b5a;
+}
+
+
+/* CSS Navegação principal */
+.navbar
+{
+    display: flex;
+    background-color: #eb3b5a;
+}
+.navbar-nav
+{
+    display: inline-block;
+}
+.navbar-nav ul
+{
+    display: -webkit-inline-box;
+}
+.navbar-nav li
+{
+    list-style: none;
+}
+.logo
+{
+    display: block;
+}
+#device-menu-open
+{
+    display:block;
+    color:#FFF;
+    cursor: pointer;
+}
+.navbar-list-item
+{
+    padding: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    text-decoration: none;
+    color: white;
+    vertical-align: middle;
+}
+#check
+{
+    display: none;
+}
+#device-menu-open
+{
+    display: none;
+}
+.container
+{
+    width:80%;
+    margin: auto;
+}
+ /* ------------- */
+
+
+/* CSS para os banners em Bloco */
+.banners-block
+{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+}
+.banner-body
+{
+    width: 20em;
+    height: fit-content;
+    display: grid;
+    padding: 0px;
+    margin: 5px auto;
+    position: relative;
+    overflow: hidden;
+}
+.banner-body img
+{
+    height: 20em;
+}
+.banner-body a
+{
+    transition: all 0.5s; 
+    width: 20em;   
+}
+.banner-body a:hover
+{
+    transform: scale(1.1);
+}
+.banners-block figcaption
+{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: #FFF;
+    text-decoration: none;
+    backface-visibility: hidden;
+}
+.banners-block figure figcaption h1
+{
+    bottom:0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+@media only screen and (max-width: 700px)
+{
+    .banners-block
+    {
+        display: block;
+    }
+    figure.banner-body
+    {
+        width: 100%;
+    }
+    .banner-body img
+    {
+        width: 100%;
+        height: 100%;
+    }
+    .banner-body a
+    {
+        width: 100%;
+    }
+    *
+    {
+        padding:0px;
+        margin:0px;
+        vertical-align: middle;
+    }
+    li
+    {
+        list-style: none;
+    }
+    header
+    {
+        background-color: #eb3b5a;
+    }
+    .resp-nav
+    {
+        position: fixed;
+        top:0;
+        -webkit-transform: translate(-100%,0);
+        transform: translate(-100%,0);
+        min-width: 70%;
+        height: 100%;
+        background-color: #FFF;
+        transition: all 0.5s;
+        z-index: 10;
+    }
+    .resp-menu-top
+    {
+        background-color: #eb3b5a;
+        height: 3em;
+        width: 100%;
+        display: flex;
+    }
+    .resp-menu-top a
+    {
+        margin: auto;
+        color: #FFF;
+        text-decoration: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1em;
+    }
+    .resp-menu-top a ion-icon
+    {
+        padding: 5px;
+    }
+    .resp-menu-body
+    {
+        background-color: #FFF;
+    }
+    .resp-menu-body li
+    {
+        display: flex;
+    }
+    .resp-menu-body li a
+    {
+        width:100%;
+        padding: 10px;
+        text-decoration: none;
+        color:#282828;
+        text-transform: uppercase;
+        font-size: large;
+        border-bottom: 1px solid #eb3b5a;
+    }
+    .resp-menu-body li a:hover
+    {
+        background-color: #eb3b5a;
+        color:#FFF;
+    }
+    .resp-menu-body li a::after
+    {
+        content: ">";
+        float: right;
+        text-transform: capitalize;
+    }
+    .resp-menu-foot
+    {
+        background-color: #eb3b5a;
+    }
+    .resp-menu-foot li
+    {
+        color:#FFF;
+        display: flex;
+    }
+    .resp-menu-foot ion-icon
+    {
+        padding: 0.5em;
+    }
+    .resp-menu-foot li a
+    {
+        color:#FFF;
+        text-decoration: none;
+        font-size: large;
+        text-transform: uppercase;
+        padding:0.5em;
+        width: 100%;
+    }
+    .resp-menu-foot li a:hover
+    {
+        background-color: #FFF;
+        color:#eb3b5a;
+    }
+    .background
+    {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-color: #000;
+        z-index: 9;
+        opacity: 0.8;
+        transition: all 0.8s;
+        -webkit-transform: translate(-100%,0);
+        transform: translate(-100%,0);
+    }
+    #check:checked ~ .background
+    {
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0);
+    }
+    #check:checked ~ .resp-nav
+    {
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0);
+    }    
+    .logo
+    {
+        height: 3em;
+        display: table-cell;
+    }
+    .logo label
+    {
+        color: #FFF;
+    }
+
+}
+/* ------------- */
+.slider img
+{
+    width:100%;
+
+}
+.menu
+{
+    display: flex;
+}
+.btn-primary
+{
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#1F2120FF;
+    transition: all 0.5s ease-in-out;
+}
+.btn-primary:hover
+{
+    background-color:#eb3b5a;
+}
+
+.active
+{
+    background-color: #eb3b5a;
+}
+/*CSS container com os produtos */
+
+.products
+{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;     
+    padding:0px;  
+}
+.product
+{
+    width: 20em;
+}
+
+/* CSS para card de produto Topo*/
+
+.product-top
+{
+    margin: 20px 20px 20px 0px;
+    text-align: center;
+    height: 20em;
+    overflow: hidden;
+}
+.img-product
+{
+    width: 100%;
+}
+.product-mask
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+.img-product-secundary
+{
+    width: 100%;
+}
+.img-product-front
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.8s;
+}
+.img-product-back
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;    
+}
+.product-mask:hover .img-product-front
+{
+    opacity: 0;
+}
+
+/* CSS para a TAG do topo */
+.tag
+{
+    position: relative;
+    top: 46px;
+    right: 40%;
+}
+
+/* CSS para card de produto Footer */
+.product-footer
+{
+    margin: 20px 20px 20px 0px;
+    text-align: center;
+}
+.product-footer label
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    font-size: 20px;  
+    color: #282828;
+}
+.product-footer a
+{
+    display: inline-block;
+    padding: 5px 0px 5px 0px;
+    text-decoration: none;    
+}
+.btn-buy
+{
+    background-color:#eb3b5a;
+    color: #FFFFFF;
+    width: 100%;
+    transition: all 0.5s;
+}
+.btn-buy:hover
+{
+    background-color:  #282828;
+}
+.product-footer ion-icon
+{
+    vertical-align: middle;
+    margin: 5px;
+}
