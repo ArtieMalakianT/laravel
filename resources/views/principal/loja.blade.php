@@ -9,7 +9,13 @@
 <!-- Container de Banners -->
 <div class="banners-block">  
         
-    <!-- Banner 1-->
+    <!-- Banner 1 -->
+    <div class="col-6">
+        <div class="row">
+            <img class="img-banner" src="img/banners/Conjuntos.jpg"> 
+        </div>
+        
+        <!--
         <figure class="banner-body">
             <a class="link-banner" href="categorias/categorias.html">
             <img class="img-banner" src="img/banners/Conjuntos.jpg">                    
@@ -17,9 +23,19 @@
                     <h1>Conjuntos</h1>                            
             </figcaption>
             </a>                       
-        </figure>               
+        </figure> -->              
+    </div>
     
-    <!-- Banner 2 -->
+
+    <div class="col-6">
+        <div class="row">
+            <img class="img-banner" src="img/banners/tanga.jpg">
+        </div>
+
+        <div class="row">
+            <img class="img-banner" src="img/banners/Soutiens.jpg">
+        </div>
+        <!--
         <figure class="banner-body">
             <a class="link-banner" href="">
                 <img class="img-banner" src="img/banners/tanga.jpg">
@@ -28,8 +44,6 @@
                 </figcaption>
             </a>                                                
         </figure>
-
-    <!-- Banner 3 -->
         <figure class="banner-body">
             <a class="link-banner" href="">
                 <img class="img-banner" src="img/banners/Soutiens.jpg">
@@ -37,7 +51,8 @@
                         <h1>Soutiens</h1>                            
                 </figcaption>
             </a>                                                
-        </figure>
+        </figure> -->
+    </div>
         
 </div>
 

@@ -8,20 +8,22 @@
     </head>
     <body>     
 
-        <header>            
-                <!-- Mobile Menu -->
+        <header> 
+            <!-- Mobile Menu -->
+            <section class="mobile-menu">           
+                
                 <input type="checkbox" id="check"/>
         
                 <div class="background">     
 
                 </div>
     
-                <section class="header">
+                <article class="header">
                     <div class="logo">
                             <label for="check"><ion-icon size="large" name="apps"></ion-icon></label>
                         <label><img src="/img/GiSales_logo_pequena_branco.png"></label>
                     </div>
-                </section>
+                </article>
                 <nav class="resp-nav" for="check">
                     <div class="resp-menu-top">  
                     @auth
@@ -59,7 +61,14 @@
                         <li class="resp-menu-foot-item"><a href="#"><ion-icon name="logo-whatsapp"></ion-icon>Atendimento Whats App</a></li>
                     </ul>
                 </nav>
+            </section>
                 <!-- End of Mobile Menu -->
+
+            <section class="normal-menu">
+                <div class="menu-top-row">
+
+                </div>
+            </section>
         </header>   
         
         <div class="container">            
