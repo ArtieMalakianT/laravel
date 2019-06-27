@@ -23,8 +23,25 @@
                     </div>
                 </section>
                 <nav class="resp-nav" for="check">
-                    <div class="resp-menu-top">                
-                        <a href="#" class="resp-menu-top-item"><ion-icon name="person" size="large"></ion-icon><span>Acesse sua conta</span></a>
+                    <div class="resp-menu-top">  
+                    @auth
+                    @if (Route::has('register'))  
+                    <a href="/home" class="resp-menu-top-item">
+                            <ion-icon name="person" size="large">
+
+                            </ion-icon>
+                            <span>{{ Auth::user()->name }}</span>
+                    </a>
+                    @endif          
+                    @else 
+                    <a href="/register" class="resp-menu-top-item">
+                            <ion-icon name="person" size="large">
+
+                            </ion-icon>
+                            <span>Cadastre-se</span>
+                    </a>                          
+                        
+                    @endauth
                         <a class="resp-menu-top-item"><label for="check"><ion-icon name="close-circle" size="large"></ion-icon></label></a>
                     </div>
                     <ul class="resp-menu-body">

@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\pagseguro;
 
-class index extends Controller
+class PagseguroController extends Controller
 {
     public function index()
     {
@@ -24,5 +24,9 @@ class index extends Controller
         });
 
         $promise->wait();
+    }
+    public function payment()
+    {
+        return view('pagseguro.payment');
     }
 }

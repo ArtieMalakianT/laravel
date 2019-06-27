@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('principal.loja');
-});
+Route::get('/','PrincipalController@index');
 
 Auth::routes();
 
@@ -23,4 +21,5 @@ Route::get('/home', 'HomeController@index')->name('home');
     return view('pagseguro.index');
 });*/
 
-Route::get('/pagseguro', 'Pagseguro\Index@index');
+Route::get('/pagseguro', 'Pagseguro\PagseguroController@index');
+Route::get('/payment', 'Pagseguro\PagseguroController@payment');
