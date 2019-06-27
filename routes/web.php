@@ -18,3 +18,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+/*Route::get('/pagseguro', function () {
+    return view('pagseguro.index');
+});*/
+
+Route::get('/pagseguro', 'Pagseguro\Index@index');
