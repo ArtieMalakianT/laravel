@@ -2,6 +2,7 @@ body
 {
     padding: 0px;
     margin: 0px;
+    background: #fff4f8;
 }
 
 /* Scrool Bar Width */
@@ -314,13 +315,16 @@ body
 .product
 {
     width: 20em;
+    margin: 10px auto;
+    padding: 10px;
+    background: #FFFFFF;
+    border-radius: 5px;
 }
 
 /* CSS para card de produto Topo*/
 
 .product-top
 {
-    margin: 20px 20px 20px 0px;
     text-align: center;
     height: 20em;
     overflow: hidden;
@@ -369,7 +373,6 @@ body
 /* CSS para card de produto Footer */
 .product-footer
 {
-    margin: 20px 20px 20px 0px;
     text-align: center;
 }
 .product-footer label
