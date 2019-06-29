@@ -8,6 +8,10 @@ body
     margin: 0px;
     background: #fff4f8;
 }
+.header
+{
+    position: fixed;
+}
 .container
 {
     width: 80%;
@@ -160,6 +164,7 @@ body
     .container
     {
         width:100%;
+        padding-top: 48px;
         transform: translate(0%,0%);
     }
     *
@@ -175,9 +180,8 @@ body
     .header
     {
         background-color: #eb3b5a;
-        position: initial;
         width: 100%;
-        z-index: 99;
+        z-index: 8;
     }
     .resp-nav
     {
