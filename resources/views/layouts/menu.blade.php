@@ -4,11 +4,27 @@
         <title>Loja | Página Inicial</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/loja.css" type="text/css" rel="stylesheet">
-        <script src="jquery/jquery-1.10.2.js"></script>
+        <script src="js/jquery-3-4-1.js"></script>
     </head>
-    <body>     
+    <body>    
+    
+    <!-- NOVIDADES -->
+    <input type="checkbox" id="check-email" style="display:none" />
+            <div class="novidades">       
 
-        <header> 
+                <label>Digite seu e-mail para receber nossas Novidades!</label>
+
+                    <form action="" method="">
+                        <input type="email" name="email" placeholder="Digite seu e-mail" require maxlenght="100"/>
+
+                        <button class="btn-primary">Confirmar</button>
+                        <label for="check-email" title="Fechar este formulário"><ion-icon name="close-circle" size="large"></ion-icon></label>
+                    </form>                        
+            </div>
+    <!--  -->
+
+        <div class="header">
+            
             <!-- Mobile Menu -->
             <section class="mobile-menu">           
                 
@@ -32,7 +48,7 @@
                             <ion-icon name="person" size="large">
 
                             </ion-icon>
-                            <span>{{ Auth::user()->name }}</span>
+                            <span>{{ Auth::user()->name }} - Acesse sua conta</span>
                     </a>
                     @endif          
                     @else 
@@ -40,7 +56,7 @@
                             <ion-icon name="person" size="large">
 
                             </ion-icon>
-                            <span>Cadastre-se</span>
+                            <span>Login ou Cadastre-se</span>
                     </a>                          
                         
                     @endauth
@@ -62,31 +78,23 @@
                     </ul>
                 </nav>
             </section>
-                <!-- End of Mobile Menu -->
-
-            <section class="normal-menu">
-                <div class="menu-top-row">
+            <!-- End of Mobile Menu -->
+            
+            <!-- Normal Menu -->
+            <section class="normal-menu">                                
+                
+                <div class="normal menu-body">
 
                 </div>
+
             </section>
-        </header>   
+            <!-- End of Normal Menu -->
+        </div>   
         
         <div class="container">            
             @yield('conteudo')
-        </div>  
+        </div>
 
-        <script>
-
-            function btnActive(elmnt)
-            {
-                $('.btn-primary').each(function(){
-                    $('.menu a').removeClass('btn-primary active').addClass('btn-primary');
-                });
-                
-
-                $(elmnt).addClass('btn-primary active');                
-            }
-        </script>
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     </body>
 </html>
