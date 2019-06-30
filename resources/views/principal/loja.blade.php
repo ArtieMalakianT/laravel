@@ -4,7 +4,8 @@
 
 <!-- Slider -->
 <div class="slider">
-    <img src="img/Banner_2.png" alt="">
+    <img id="banner-normal" src="img/banners/Banner-Super-Sale-Paisagem.jpg" alt="">
+    <img id="banner-mobile" src="img/banners/Banner-Super-Sale-Retrato.jpg" alt="">
 </div>
 
 <!-- Container de Banners -->
@@ -12,19 +13,47 @@
         
     <!-- Coluna 1 Banner 1 -->
     <div class="col-6">
-        <div class="row">
-            <img class="img-banner" src="img/banners/Conjuntos.jpg"> 
+        <div id="banner-conjuntos" class="row">                        
+
+            <img class="img-banner" src="img/banners/Conjuntos.jpg">
+
+            <a href="#" id="banner-mask-1" class="banner-mask"></a>
+
+            <a class="banner-link">
+                <span id="link-conjuntos">Conjuntos</span>
+                <span class="link-conferir">Conferir</span>
+            </a>
+                        
         </div>              
     </div>
     
     <!-- Coluna 2 Banners 2 e 3 -->
     <div class="col-6">
-        <div class="row">
+        <div id="banner-tanga" class="row">                        
+
             <img class="img-banner" src="img/banners/tanga.jpg">
+
+            <a href="" class="banner-mask"></a>
+
+            <a class="banner-link">
+                <span id="link-calcinhas">Calcinhas</span>
+                <span class="link-conferir">Conferir</span>
+            </a>
+
+            
         </div>
 
-        <div class="row">
-            <img class="img-banner" src="img/banners/Soutiens.jpg">
+        <div id="banner-soutiens" class="row">
+
+            <img class="img-banner" src="img/banners/Soutiens.jpg"> 
+            
+            <a href="#" class="banner-mask"></a>
+
+            <a class="banner-link">
+                <span id="link-soutiens">Soutiens</span>
+                <span class="link-conferir">Conferir</span>
+            </a>
+                        
         </div>
     </div>
         
