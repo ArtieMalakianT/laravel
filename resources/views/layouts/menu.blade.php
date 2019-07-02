@@ -4,6 +4,7 @@
         <title>Loja | Página Inicial</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/loja.css" type="text/css" rel="stylesheet">
+        <link href="css/mobile-loja.css" type="text/css" rel="stylesheet">
         <script src="js/jquery-3-4-1.js"></script>
     </head>
     <body>    
