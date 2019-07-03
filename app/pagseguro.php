@@ -12,7 +12,7 @@ class pagseguro
     CONST PRODUCTION_TOKEN = "BEE6C39575144D928BB12A5EE22EBE75";
 
     const SANDBOX_SESSIONS = "https://ws.sandbox.pagseguro.uol.com.br/v2/sessions";
-    const PRODUCTION_SESSIONS = "https://ws.pagseguro.uol.com.br/v2/sessions?{{credenciais}}";
+    const PRODUCTION_SESSIONS = "https://ws.pagseguro.uol.com.br/v2/sessions";
 
     public static function getAuthentication():array
     {
