@@ -8,7 +8,7 @@
 <div class="single-product-area">
     <div class="zigzag-bottom"></div>
     <div class="container">
-        <div class="row">
+        <div class="row2">
             <div class="col-md-12">
                 
                 <div class="product-content-right">
