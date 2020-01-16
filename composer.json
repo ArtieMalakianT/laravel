@@ -14,7 +14,7 @@
         "guzzlehttp/guzzle": "*",
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
-        "phpmyadmin/phpmyadmin": "4.9.0.1",
+        "phpmyadmin/phpmyadmin": "4.9.2",
         "predis/predis": "^1.1"
     },
     "require-dev": {
